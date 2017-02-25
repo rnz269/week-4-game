@@ -1,0 +1,23 @@
+.profile {
+	width: 100%;
+	overflow:hidden;
+	border: 2px solid blue;
+	height:200px;
+}
+
+
+.container {
+	border: 2px solid green;
+	background-color:white;
+}
+
+body {
+	/*background:url("../images/earth.jpg") no-repeat center center;*/
+	background:url("../images/earth2.jpg") no-repeat center center;
+	background-size:cover;
+}
+
+.fancytitle {
+	color:gray;
+	font-size:3em;
+}

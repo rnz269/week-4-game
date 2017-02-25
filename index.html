@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Dragon Ball RPG</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">  
+  <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- Header with Intro -->
+	<div class="row">
+		<div class="col-md-12">
+			<h1 class="fancytitle text-center">
+			Dragon Ball RPG!
+			</h1>
+		</div>
+	</div>
+
+	<!-- Character Selection -->
+	<div class="row container">
+		<div class="row">
+			<div class="col-md-2 text-center gokuVisible">
+				<h4>Goku</h4>
+			</div>
+			<div class="col-md-2 text-center gohanVisible">
+				<h4>Gohan</h4>
+			</div>
+			<div class="col-md-2 text-center vegetaVisible">
+				<h4>Vegeta</h4>
+			</div>
+			<div class="col-md-2 text-center friezaVisible">
+				<h4>Frieza</h4>
+			</div>
+			<div class="col-md-2 text-center cellVisible">
+				<h4>Cell</h4>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class = "col-md-2 gokuVisible">
+				<img class = "profile goku" src = "assets/images/goku.jpg">
+			</div>
+
+			<div class="col-md-2 gohanVisible">
+				<img class = "profile gohan" src = "assets/images/gohan.jpg">
+			</div>
+
+			<div class="col-md-2 vegetaVisible">
+				<img class = "profile vegeta" src = "assets/images/vegeta.png">
+			</div>
+
+			<div class="col-md-2 friezaVisible">
+				<img class = "profile frieza" src = "assets/images/frieza.png">
+			</div>
+
+			<div class="col-md-2 cellVisible">
+				<img class = "profile cell" src = "assets/images/cell.png">
+			</div>
+
+		</div>
+		
+		<div class="row">
+			<div class="col-md-2 text-center gokuVisible">
+				<h4 class="gokuHealth"></h4>
+			</div>
+			<div class="col-md-2 text-center gohanVisible">
+				<h4 class="gohanHealth"></h4>
+			</div>
+			<div class="col-md-2 text-center vegetaVisible">
+				<h4 class="vegetaHealth"></h4>
+			</div>
+			<div class="col-md-2 text-center friezaVisible">
+				<h4 class="friezaHealth"></h4>
+			</div>
+			<div class="col-md-2 text-center cellVisible">
+				<h4 class="cellHealth"></h4>
+			</div>
+
+		</div>
+	
+
+		<div class="row">
+			<div class="col-md-2">
+			 <button type="button" class="btn btn-danger attack">Attack</button>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-4">
+				<p class="commentaryIntermediate"></p>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-4">
+				<p class="commentary"></p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-2 restart">
+			</div>
+		</div>
+	
+	</div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>

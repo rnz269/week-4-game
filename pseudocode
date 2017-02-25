@@ -1,0 +1,58 @@
+Functionality
+
+- First, create our six objects representing each character. 
+	- properties for each character include:
+			1. Health 
+			2. Attack function: 5 *(1 + numberOfUserAttacks)
+			3. Counter-attack power
+			4. isHero flag variable
+			5. isEnemy flag variable
+
+
+- Second, user selecting characters using if then logic. Return necessary variables to global scope. 
+	1. First character chosen modifies isHero property to true
+	2. Second character chosen modifies isEnemy property to true
+	3. Move these two characters to the battlefield
+		Change isFighting variable to true upon clicked. 
+
+
+
+-- Third, create a gameState object
+var gameState = {
+	isHero: first user click,
+	isEnemy: second user click,
+	currentHeroHealth: Hero.health,
+	currentEnemyHealth: Enemy.health,
+	numberOfUserAttacks:"",
+	wins:0
+	
+
+- Fourth, define attacking mechanism nested within gameState
+	- When user selects "attack" button, isHero deals damage to isEnemy
+	- After taking damage, if hp > 0, then isEnemy deals damage back to isHero
+	- Trigger renderScoreboard() function
+
+- Fifth, create a function called renderScoreboard
+	- This will send gameState information to html. 
+
+
+
+
+
+
+
+
+Design
+
+Initially need one row, with all characters in the top row. Inside this one row, create four columns. Inside each column, create 3 subrows. 
+Subrow 1: name of character
+Subrow 2: image of character
+Subrow 3: Health (HP)
+
+
+on click of hero, other three character drop below, backgrounds change to red
+
+Miscellaneous
+
+Music for villain characters. Upon victory, the hero's character's music plays. 
+
