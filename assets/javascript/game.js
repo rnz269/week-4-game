@@ -50,6 +50,8 @@ var gameState = {
 
 // var goku = gameState.character.goku;
 // goku.attackPower = 6 + gameState.numberOfUserAttacks;
+var goku = gameState.character.goku;
+goku.attackPower = 5;
 
 
 // numberOfUserAttacks is updating, but goku.attackPower is not. 
@@ -176,11 +178,16 @@ $(".btn").click(function(){
 				}
 					if (gameState.hero.health < 1) {
 						gameState.hero.isAlive = false;
+						// Clear victory commentary javascript variable so it won't render again with the loss commentary.
+						gameState.victoryCommentary = "";
 						gameState.lossCommentary = "You have been defeated. Game over!";
+						// Disable attack button upon loss
 						$("attack").prop("disabled",true);
+						// create a restart button variable in javascript:
 						var restartButton = $("<button>");
 						restartButton.addClass("btn btn-danger");
 						restartButton.text("Restart");
+						// assigning restart button variable to an html element div so it renders on webpage:
 						$(".restart").html(restartButton);
 					}
 				
